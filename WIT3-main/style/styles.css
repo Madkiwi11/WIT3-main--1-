@@ -690,7 +690,7 @@ section:not(.interactive-section).section-visible {
     padding-bottom: 100px;
 }
 
-.image-content {
+/*.image-content {
     flex: 1;
     max-width: 60%;
     overflow: hidden;
@@ -706,6 +706,31 @@ section:not(.interactive-section).section-visible {
 }
 
 .image-content:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+.image-content:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}*/
+.image-content {
+    flex: 1;
+    max-width: 60%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    aspect-ratio: 15 / 9; /* نسبة العرض إلى الارتفاع للمستطيل */
+}
+
+.image-content video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يضمن أن الفيديو يغطي كامل المساحة مع الحفاظ على النسب */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.image-content:hover video {
     transform: scale(1.05);
     filter: brightness(1.1);
 }
@@ -2156,3 +2181,39 @@ body.dark-mode .footer-social a:hover {
 body.dark-mode.program-details{
     background-color: #121212;
 }
+
+.icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon {
+font-size: 17px;
+}
+.sign-up {
+    color: #fff; /* Text color */
+    font-size: 17px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.dark-mode .sign-up:hover {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+/* Responsive design for small screens 
+@media (max-width: 768px) {
+    .sign-up {
+        padding: 8px 12px;
+    }
+}*/
+
+.translate-icon {
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+}
+

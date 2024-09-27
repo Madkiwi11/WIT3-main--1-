@@ -96,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
         img2.style.opacity = '1'; 
     }
 
-    setTimeout(switchImage, 1200); // تبديل الصورة بعد 3 ثوانٍ
+    setTimeout(switchImage, 200); // تبديل الصورة بعد 3 ثوانٍ
 });
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -118,4 +118,19 @@ document.addEventListener('DOMContentLoaded', () => {
     
     window.addEventListener('scroll', checkVisibility);
     checkVisibility(); 
+});
+
+document.getElementById('translate-icon').addEventListener('click', function() {
+
+    var translateText = document.getElementById('translate-text');
+    var currentLang = document.documentElement.lang; 
+
+    if (currentLang === 'en') {
+        document.documentElement.lang = 'ar';
+        translateText.textContent = 'AR';
+    } else {
+        
+        document.documentElement.lang = 'en';
+        translateText.textContent = 'EN';
+    }
 });

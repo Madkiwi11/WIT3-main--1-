@@ -17,30 +17,35 @@
             <a href="#" class="logo">
                 <img src="img/logo.png" alt="Logo">
             </a>
-            <ul class="nav-links" >
-                <li><a href="#" class="translate-text" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
+            <ul class="nav-links">
+                <li><a href="index.html" class="translate-text" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
                 <li><a href="about.html" class="translate-text" data-en="About" data-ar="عن الشركة">About</a></li>
                 <li><a href="program.html" class="translate-text" data-en="Programs" data-ar="البرامج">Programs</a></li>
-                <li><a href="signUp.html" class="translate-text" data-en="Sign Up" data-ar="التسجيل">Sign Up</a></li>
+                <li><a href="signIn.html" class="translate-text" data-en="My Courses" data-ar="دوراتي">My Courses</a></li>
             </ul>
             <div class="icons">
-                <a href="#" class="icon search-icon"><i class="fas fa-search"></i></a> 
-                <a href="#" class="icon translate-icon" id="translate-icon"><i class="fas fa-globe"></i></a>
-                <a href="profile.html" class="icon profile-icon"><i class="fas fa-user"></i></a> 
-                <a href="#" class="icon dark-mode-icon" id="dark-mode-toggle"><i class="fas fa-moon"></i>
-                </a> 
-            <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button> 
+                <a href="#" class="icon translate-icon" id="translate-icon">
+                    <span id="translate-text">EN</span>
+                </a>
+                <a href="#" class="icon search-icon"><i class="fas fa-search"></i></a>   
+               
+                <a href="#" class="icon dark-mode-icon" id="dark-mode-toggle"><i class="fas fa-moon"></i></a>
+                <a href="profile.html" class="icon profile-icon"><i class="fas fa-user"></i></a>
+                <a href="signUp.html" class="sign-up translate-text" data-en="Sign Up" data-ar="التسجيل">Sign Up</a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+
+            </div>
         </div>
     </nav>
+    
 
   <!--hero sec--> 
     <section class="interactive-section">
         <div class="text-container">
             <h1 class="translate-text" data-en="Trailblazers Wanted: Join Women in Tech and Pioneer the Future of STEM" data-ar="المبدعون مطلوبون: انضم إلى النساء في التقنية وتقدم بمستقبل STEM">Trailblazers Wanted: Join Women in Tech and Pioneer the Future of STEM</h1>
-            <p class="translate-text " data-en="Ready to lead the STEM revolution? Join Women in Tech and pioneer the digital future. Gain skills, connect with experts, and be part of the change in science, technology, engineering, and mathematics." data-ar="جاهز لقيادة ثورة STEM؟ انضم إلى النساء في التقنية وتقدم بالمستقبل الرقمي. احصل على المهارات، تواصل مع الخبراء، وكن جزءًا من التغيير في العلوم والتكنولوجيا والهندسة والرياضيات.">Ready to lead the STEM revolution? Join Women in Tech and pioneer the digital future. Gain skills, connect with experts, and be part of the change in science, technology, engineering, and mathematics.</p>
-
+            <p class="translate-text " data-en="Ready to lead the STEM revolution? Join Women in Tech and pioneer the digital future. Gain skills, connect with experts, and be part of the change in science, technology, engineering, and mathematics." data-ar="جاهز لقيادة ثورة ؟ انضم إلى النساء في التقنية وتقدم بالمستقبل الرقمي. احصل على المهارات، تواصل مع الخبراء، وكن جزءًا من التغيير في العلوم والتكنولوجيا والهندسة والرياضيات.">Ready to lead the STEM revolution? Join Women in Tech and pioneer the digital future. Gain skills, connect with experts, and be part of the change in science, technology, engineering, and mathematics.</p>
             <button type="button" class="btn">
-                <strong data-en="Join Us" data-ar="انضم إلينا">Join Us</strong>
+                <strong class="translate-text" data-en="Join Us"data-ar="انضم إلينا">Join Us</strong>
                 <div id="container-stars">
                 <div id="stars"></div>
                 </div>
@@ -66,7 +71,9 @@
     
     <section class="empowerment-section ">
         <div class="image-content ">
-            <img src="img/about.png" alt="Empowering Futures in STEM">
+        <!-- <img src="img/about.png" alt="Empowering Futures in STEM">
+        -->
+        <video src="vid.mp4" autoplay muted loop playsinline></video>
         </div>
         <div class="text-content">
             <h2 class="translate-text" data-en="Empowering Futures in STEM" data-ar="STEM تمكين المستقبل في ">Empowering Futures in STEM</h2>
@@ -200,7 +207,7 @@
                     &quot;The mentorship provided by the program was invaluable in shaping my career and boosting my confidence.&quot;
                 </p>
                 <p class="opinion-author translate-text" data-en="Sara Smith, UI UX Designer" data-ar="سارة سميث، مصممة تجربة المستخدم">
-                    Sara Smith, UI UX Designer
+                    Sara Smith <br> UI UX Designer
                 </p>
             </div>
     
@@ -210,7 +217,7 @@
                     &quot;I gained practical experience and networking opportunities that have been essential for my growth.&quot;
                 </p>
                 <p class="opinion-author translate-text" data-en="Lina Jones, Front-end Developer" data-ar="لينا جونز، مطورة واجهات أمامية">
-                    Lina Jones, Front-end Developer
+                    Lina Jones<br> Front-end Developer
                 </p>
             </div>
     
@@ -220,7 +227,7 @@
                     &quot;The program offered great guidance and support, which helped me excel in my field.&quot;
                 </p>
                 <p class="opinion-author translate-text" data-en="Amira Khan, Data Scientist" data-ar="أميرة خان، عالمة بيانات">
-                    Amira Khan, Data Scientist
+                    Amira Khan<br>Data Scientist
                 </p>
             </div>
     
@@ -230,7 +237,7 @@
                     &quot;An excellent program that connected me with mentors who helped me navigate my career path effectively.&quot;
                 </p>
                 <p class="opinion-author translate-text" data-en="Huda Ahmed, Software Engineer" data-ar="هدى أحمد، مهندسة برمجيات">
-                    Huda Ahmed, Software Engineer
+                    Huda Ahmed<br> Software Engineer
                 </p>
             </div>
         </div>
@@ -382,13 +389,13 @@
 
                 setTimeout(() => {
                     questionBubble.style.opacity = 1;
-                }, index * 2000); 
+                }, index * 1500); 
         
               
                 setTimeout(() => {
                     answerBubble.style.opacity = 1;
                     answerBubble.style.animation = 'slideIn 1s ease-out forwards';
-                }, (index * 2000) + 1000); 
+                }, (index * 1000) + 1100); 
             };
     
             

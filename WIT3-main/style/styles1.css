@@ -759,3 +759,37 @@ body.dark-mode .women-read-more:hover {
     background-color: #b958c4; 
 }
 
+.icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon {
+font-size: 17px;
+}
+.sign-up {
+    color: #fff; /* Text color */
+    font-size: 17px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+.dark-mode .sign-up:hover {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+/* Responsive design for small screens 
+@media (max-width: 768px) {
+    .sign-up {
+        padding: 8px 12px;
+    }
+}*/
+
+.translate-icon {
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+}

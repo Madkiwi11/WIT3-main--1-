@@ -375,3 +375,18 @@ const observer = new IntersectionObserver((entries) => {
 
 const section = document.getElementById('empower-women');
 observer.observe(section);
+
+document.getElementById('translate-icon').addEventListener('click', function() {
+
+    var translateText = document.getElementById('translate-text');
+    var currentLang = document.documentElement.lang; 
+
+    if (currentLang === 'en') {
+        document.documentElement.lang = 'ar';
+        translateText.textContent = 'AR';
+    } else {
+        
+        document.documentElement.lang = 'en';
+        translateText.textContent = 'EN';
+    }
+});

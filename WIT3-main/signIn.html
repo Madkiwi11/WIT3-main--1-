@@ -30,46 +30,61 @@
             <a href="#" class="logo">
                 <img src="img/logo.png" alt="Logo">
             </a>
-            <ul class="nav-links" >
+            <ul class="nav-links">
                 <li><a href="index.html" class="translate-text" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
                 <li><a href="about.html" class="translate-text" data-en="About" data-ar="عن الشركة">About</a></li>
                 <li><a href="program.html" class="translate-text" data-en="Programs" data-ar="البرامج">Programs</a></li>
-                <li><a href="myProgram.html" class="translate-text" data-en="Programs" data-ar="البرامج">My Program</a></li>
+                <li><a href="myProgram.html" class="translate-text" data-en="My Courses" data-ar="دوراتي">My Courses</a></li>
                 <li><a href="En.html" class="translate-text" data-en="Enroll" data-ar="التسجيل">Enroll</a></li>
             </ul>
             <div class="icons">
-                <a href="#" class="icon search-icon"><i class="fas fa-search"></i></a> 
-                <a href="#" class="icon translate-icon" id="translate-icon"><i class="fas fa-globe"></i></a>
-                <a href="profile.html" class="icon profile-icon"><i class="fas fa-user"></i></a> 
-                <a href="#" class="icon dark-mode-icon" id="dark-mode-toggle"><i class="fas fa-moon"></i>
-                </a> 
-            <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button> 
+                <a href="#" class="icon translate-icon" id="translate-icon">
+                    <span id="translate-text">EN</span>
+                </a>
+                <a href="#" class="icon search-icon"><i class="fas fa-search"></i></a>  
+                <a href="#" class="icon dark-mode-icon" id="dark-mode-toggle"><i class="fas fa-moon"></i></a>
+                <a href="profile.html" class="icon profile-icon"><i class="fas fa-user"></i></a>
+                <a href="signUp.html" class="sign-up translate-text" data-en="Sign Up" data-ar="التسجيل">Sign Up</a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
     </nav>
+        
+
+
 
     <section class="signIn">
         <div class="signInCard">
             <div class="cardContent">
-                <h3>Sign In</h3>
+                <h3 class="translate-text" data-en="Sign In" data-ar="تسجيل الدخول">Sign In</h3>
                 <form action="#">
-                    <input type="email" id="email" name="email" placeholder="email"><br><br>
+                    <input type="email" id="email" name="email" placeholder="email" class="translate-text" data-en="Email" data-ar="البريد الإلكتروني"><br><br>
                     <div class="input-container">
-                        <input type="password" id="password" name="password" placeholder="password">
+                        <input type="password" id="password" name="password" placeholder="password" class="translate-text" data-en="Password" data-ar="كلمة المرور">
                         <i class="fas fa-eye show-hide-password" id="password-eye"></i>
                     </div>
                     <div class="remember-me">
                         <input type="checkbox" id="remember-me-checkbox">
-                        <label for="remember-me-checkbox">Remember me</label>
+                        <label for="remember-me-checkbox" class="translate-text" data-en="Remember me" data-ar="تذكرني">Remember me</label>
                     </div>
                     <br><br>
-                    <input type="submit" value="Sign In" id="SignUpBtn">
+                    <button id="SignUpBtn" class="translate-text" data-en="Sign In" data-ar="تسجيل الدخول" onclick="window.location.href='index.html';">
+                        Sign In
+                    </button>
+                    
+                    
+                    
+                    
                 </form>
                 <div class="dont-have-account">
-                    <h4>Don't have an account? <a href="signUp.html">Sign Up</a></h4>
+                    <h4 class="translate-text" data-en="Don't have an account?" data-ar="ليس لديك حساب؟">Don't have an account? 
+                        <a href="signUp.html" class="translate-text" data-en="Sign Up" data-ar="إنشاء حساب">Sign Up</a>
+                    </h4>
                 </div>
             </div>
         </div>
     </section>
+    
 
 <footer class="footer">
         <div class="footer-container">
@@ -125,8 +140,8 @@
             }
         });
     </script>
-    <script src="./scripts/script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+   <script src="./scripts/script1.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+
 </body>
 </html>

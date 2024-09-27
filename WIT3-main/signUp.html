@@ -30,45 +30,52 @@
             <a href="#" class="logo">
                 <img src="img/logo.png" alt="Logo">
             </a>
-            <ul class="nav-links" >
+            <ul class="nav-links">
                 <li><a href="index.html" class="translate-text" data-en="Home" data-ar="الصفحة الرئيسية">Home</a></li>
                 <li><a href="about.html" class="translate-text" data-en="About" data-ar="عن الشركة">About</a></li>
                 <li><a href="program.html" class="translate-text" data-en="Programs" data-ar="البرامج">Programs</a></li>
-                <li><a href="signUp.html" class="translate-text" data-en="Sign in" data-ar="التسجيل">Sign in</a></li>
+                <li><a href="myProgram.html" class="translate-text" data-en="My Courses" data-ar="دوراتي">My Courses</a></li>
+                <li><a href="En.html" class="translate-text" data-en="Enroll" data-ar="التسجيل">Enroll</a></li>
             </ul>
             <div class="icons">
-                <a href="#" class="icon search-icon"><i class="fas fa-search"></i></a> 
-                <a href="#" class="icon translate-icon" id="translate-icon"><i class="fas fa-globe"></i></a>
-                <a href="profile.html" class="icon profile-icon"><i class="fas fa-user"></i></a> 
-                <a href="#" class="icon dark-mode-icon" id="dark-mode-toggle"><i class="fas fa-moon"></i>
-                </a> 
-            <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button> 
+                <a href="#" class="icon translate-icon" id="translate-icon">
+                    <span id="translate-text">EN</span>
+                </a>
+                <a href="#" class="icon search-icon"><i class="fas fa-search"></i></a>  
+                <a href="#" class="icon dark-mode-icon" id="dark-mode-toggle"><i class="fas fa-moon"></i></a>
+                <a href="profile.html" class="icon profile-icon"><i class="fas fa-user"></i></a>
+                <a href="signUp.html" class="sign-up translate-text" data-en="Sign Up" data-ar="التسجيل">Sign Up</a>
+                <button class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></button>
+            </div>
         </div>
     </nav>
 
     <section class="signUp">
         <div class="signUpCard">
             <div class="cardContent">
-                <h3>Sign Up</h3>
+                <h3 class="translate-text" data-en="Sign Up" data-ar="إنشاء حساب">Sign Up</h3>
                 <form action="#">
-                <input type="text" id="name" name="name" placeholder="name"><br><br>
-                <input type="email" id="email" name="email" placeholder="email"><br><br>
-                <div class="input-container">
-                    <input type="password" id="password" name="password" placeholder="password">
-                    <i class="fas fa-eye show-hide-password" id="password-eye"></i>
-                </div><br><br>
-                <div class="input-container">
-                    <input type="password" id="confirm-password" name="confirm-password" placeholder="confirm password">
-                    <i class="fas fa-eye show-hide-password" id="confirm-password-eye"></i>
-                </div><br><br>
-                <input type="submit" value="Sign Up" id="SignUpBtn">
+                    <input type="text" id="name" name="name" class="translate-text" data-en="name" data-ar="الاسم" placeholder="name"><br><br>
+                    <input type="email" id="email" name="email" class="translate-text" data-en="email" data-ar="البريد الإلكتروني" placeholder="email"><br><br>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" class="translate-text" data-en="password" data-ar="كلمة المرور" placeholder="password">
+                        <i class="fas fa-eye show-hide-password" id="password-eye"></i>
+                    </div><br><br>
+                    <div class="input-container">
+                        <input type="password" id="confirm-password" name="confirm-password" class="translate-text" data-en="confirm password" data-ar="تأكيد كلمة المرور" placeholder="confirm password">
+                        <i class="fas fa-eye show-hide-password" id="confirm-password-eye"></i>
+                    </div><br><br>
+                    <input type="submit" value="Sign Up" id="SignUpBtn" class="translate-text" data-en="Sign Up" data-ar="إنشاء حساب">
                 </form>
                 <div class="already-have-account">
-                    <h4>Already have an account? <a href="signIn.html">Sign in</a></h4>
+                    <h4 class="translate-text" data-en="Already have an account? Sign in" data-ar="هل لديك حساب بالفعل؟ تسجيل الدخول">
+                        Already have an account? <a href="signIn.html" class="translate-text" data-en="Sign in" data-ar="تسجيل الدخول">Sign in</a>
+                    </h4>
                 </div>
             </div>
         </div>
     </section>
+    
 
 <footer class="footer">
         <div class="footer-container">
@@ -125,7 +132,7 @@
         });
     </script>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/script1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
 </body>
 </html>

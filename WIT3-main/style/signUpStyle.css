@@ -180,3 +180,29 @@
         font-size: 14px;
     }
 }
+.cardContent form #SignUpBtn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #9B86BD;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s ease-in-out;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.cardContent form #SignUpBtn:hover {
+    background-color: #7c6a9b; 
+
+}
+
+.cardContent form #SignUpBtn:active {
+    transform: scale(0.98); 
+}

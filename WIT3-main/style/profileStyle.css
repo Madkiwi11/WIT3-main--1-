@@ -19,6 +19,7 @@ body {
     place-items: center; 
     height: 100vh; 
     margin: 0; 
+    box-sizing: border-box;
   }
 
 .containerMain {
@@ -478,4 +479,68 @@ flex-direction: column;
     padding-top: var(--secondMargin);
 }
 
-/** Courses Styling **/
+
+body.dark-mode .containerMain,
+body.dark-mode .profileBody,
+body.dark-mode .main,
+body.dark-mode .personalInfo,
+body.dark-mode .careerPlan,
+body.dark-mode .courses,
+body.dark-mode .Education {
+    background-color: #333;
+    border-color: #5a5a5a;
+}
+
+body.dark-mode .personalInfo h3, 
+body.dark-mode .careerPlan h3,
+body.dark-mode .courses h3,
+body.dark-mode .educationHeader h3 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .personalInfo:hover, 
+body.dark-mode .careerPlan:hover, 
+body.dark-mode .Education:hover,
+body.dark-mode .courses:hover {
+    box-shadow: 0px 1px 4px 1px rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+}
+
+body.dark-mode .editInfoBtn, 
+body.dark-mode .educationHeader button {
+    background-color: #5a5a5a;
+    color: white;
+}
+
+body.dark-mode .editInfoBtn:hover,
+body.dark-mode .educationHeader button:hover {
+    background-color: #797979;
+}
+
+body.dark-mode .rightOfCard .tags ul li {
+    background-color: #4b4b4b;
+}
+
+body.dark-mode hr {
+    border-top: 1px solid #5a5a5a;
+}
+
+body.dark-mode .mytabs label:hover {
+    background-color: #5a5a5a; /* Hover effect */
+}
+
+
+body.dark-mode .personalInfo h4,
+body.dark-mode .personalInfo h5,
+body.dark-mode .careerPlan h4,
+body.dark-mode .careerPlan .prpIcon h5,
+body.dark-mode .instituteInfo h5,
+body.dark-mode .instituteInfo h6,
+body.dark-mode .rightOfCard .titleInfo h6,
+body.dark-mode .rightOfCard .content p,
+body.dark-mode .completedCourseCard h3,
+body.dark-mode .currentCourseCard .leftOfCard h5 {
+    color: #ffffff; 
+}
+
+
